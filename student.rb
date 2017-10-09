@@ -17,7 +17,8 @@ class Student
 		begin
 			puts "Hi is this working"
 
-		# raise ArgumentError, "Argument is not a number" unless age.is_a? Integer
+		raise ArgumentError, "Argument is not a number" unless age.is_a? Integer
+		
 		raise StudentTypeError, "This is not an NSS Student"
 
 			puts "Is it still working"
