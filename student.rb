@@ -18,8 +18,8 @@ class Student
 			puts "Hi is this working"
 
 		raise ArgumentError, "Argument is not a number" unless age.is_a? Integer
-		
-		raise StudentTypeError, "This is not an NSS Student"
+
+		raise StudentTypeError, "This is not an NSS Student"  #this error is being called
 
 			puts "Is it still working"
 			puts "#{name} is #{age} years old."
@@ -37,6 +37,10 @@ class Student
 
 		else
 			puts "Run this shit if everything goes well"
+
+		ensure #ensure will ALWAYS run, exception or no
+			puts "THIS CODE ALWAYS RUNS!!!"
+
 		end
 		puts "AFTER begin-end block of code"
 	end
