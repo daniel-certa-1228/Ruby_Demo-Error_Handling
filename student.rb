@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'ruby_module_car'
 require_relative 'student_type_error'
 
@@ -7,6 +8,7 @@ class Student
 	attr_accessor :name
 
 	def initialize(name)
+		# binding.pry
 		@name = name
 	end
 
